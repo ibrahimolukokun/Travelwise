@@ -3,6 +3,7 @@ import HeroImg from '../assets/hero-image.png'
 import Hero from '../components/Hero/Hero'
 import PopularLocations from '../components/Locations/PopularLocations'
 import TestimonialMap from '../components/Testimonial/TestimonialMap'
+import CallToAction from '../components/CallToAction/CallToAction'
 
 
 const Home = () => {
@@ -30,6 +31,9 @@ const Home = () => {
 
         {/* Testimonial Map Section */}
         <TestimonialMap />
+
+        {/* Call to Action Section */}
+        <CallToAction />
 
 
       </div>
