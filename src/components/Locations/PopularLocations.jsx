@@ -1,57 +1,66 @@
 // src/components/PopularLocations.jsx
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import maldives from '../../assets/maldives.jpg';
+import rockpool1 from '../../assets/rockpool1.jpg';
+import rockpool2 from '../../assets/rockpool2.jpg';
+import machu from '../../assets/machu.jpg';
+import santorini from '../../assets/santorini.jpg';
+import grandCanyon from '../../assets/grand-canyon.jpg';
+import reef from '../../assets/great-barrier-reef.jpeg';
+import eiffel from '../../assets/eiffel-tower.jpg';
 
 const destinations = [
   {
     title: "The Maldives",
     location: "Indian Subcontinent of Asia",
-    image: "src/assets/maldives.jpg",
+    image: maldives,
     slug: "the-maldives",
   },
   {
     title: "Noosa Fairy Rock Pools",
     location: "Isle of Skye, Scotland",
-    image: "src/assets/rockpool1.jpg",
+    image: rockpool1,
     slug: "noosa-fairy-rock-pools-1",
   },
   {
     title: "Noosa Fairy Rock Pools",
     location: "Isle of Skye, Scotland",
-    image: "src/assets/rockpool2.jpg",
+    image: rockpool2,
     slug: "noosa-fairy-rock-pools-2",
   },
   {
     title: "Machu Picchu",
     location: "Peru",
-    image: "src/assets/machu.jpg",
+    image: machu,
     slug: "machu-picchu",
   },
-    {
-        title: "Santorini",
-        location: "Greece",
-        image: "src/assets/santorini.jpg",
-        slug: "santorini",
-    },
-    {
-        title: "Grand Canyon",
-        location: "Arizona, USA",
-        image: "src/assets/grand-canyon.jpg",
-        slug: "grand-canyon",
-    },
-    {
-        title: "Great Barrier Reef",
-        location: "Australia",
-        image: "src/assets/great-barrier-reef.jpeg",
-        slug: "great-barrier-reef",
-    },
-    {
-        title: "Eiffel Tower",
-        location: "Paris, France",
-        image: "src/assets/eiffel-tower.jpg",
-        slug: "eiffel-tower",
-    },
+  {
+    title: "Santorini",
+    location: "Greece",
+    image: santorini,
+    slug: "santorini",
+  },
+  {
+    title: "Grand Canyon",
+    location: "Arizona, USA",
+    image: grandCanyon,
+    slug: "grand-canyon",
+  },
+  {
+    title: "Great Barrier Reef",
+    location: "Australia",
+    image: reef,
+    slug: "great-barrier-reef",
+  },
+  {
+    title: "Eiffel Tower",
+    location: "Paris, France",
+    image: eiffel,
+    slug: "eiffel-tower",
+  },
 ];
+
 
 const PopularLocations = () => {
   const scrollRef = useRef(null);

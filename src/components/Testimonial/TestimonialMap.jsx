@@ -1,6 +1,12 @@
 // src/components/TestimonialMap.jsx
 import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import worldMap from "../../assets/world-map.png"; 
+import avatar1 from '../../assets/avatar1.jpg';
+import avatar2 from '../../assets/avatar2.jpg';
+import avatar3 from '../../assets/avatar3.jpg';
+import avatar4 from '../../assets/avatar4.jpg';
+import avatar5 from '../../assets/avatar5.jpg';
 
 const testimonials = [
   {
@@ -86,18 +92,18 @@ return (
         {/* World Map */}
         <div className="relative max-w-5xl mx-auto mt-10 animate-fadeIn">
             <img
-                src="/src/assets/world-map.png"
+                src={worldMap}
                 alt="world map"
                 className="w-full h- rounded-xl"
             />
 
             {/* Floating Avatars */}
             {[
-                { top: "15%", left: "25%", name: "Jessica", img: "avatar1.jpg" },
-                { top: "20%", right: "20%", name: "Carlos", img: "avatar2.jpg" },
-                { bottom: "20%", left: "15%", name: "Amara", img: "avatar3.jpg" },
-                { bottom: "15%", left: "45%", name: "Yuki", img: "avatar4.jpg" },
-                { bottom: "18%", right: "15%", name: "Mohammed", img: "avatar5.jpg" },
+                { top: "15%", left: "25%", name: "Jessica", img: avatar1 },
+                { top: "20%", right: "20%", name: "Carlos", img: avatar2 },
+                { bottom: "20%", left: "15%", name: "Amara", img: avatar3 },
+                { bottom: "15%", left: "45%", name: "Yuki", img: avatar4 },
+                { bottom: "18%", right: "15%", name: "Mohammed", img: avatar5 },
             ].map((marker, index) => (
                 <div
                     key={index}
@@ -111,10 +117,11 @@ return (
                     title={marker.name}
                 >
                     <img
-                        src={`/src/assets/${marker.img}`}
-                        alt={marker.name}
-                        className="w-full h-full rounded-full object-cover"
+                    src={marker.img}
+                    alt={marker.name}
+                    className="w-full h-full rounded-full object-cover"
                     />
+
                 </div>
             ))}
         </div>
