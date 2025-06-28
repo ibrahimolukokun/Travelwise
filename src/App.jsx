@@ -7,6 +7,7 @@ import Deals from './pages/Deals';
 import Community from './pages/Community';
 import About from './pages/About';
 import NoPage from './pages/NoPage';
+import LocationPage from './pages/LocationPage';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="login" element={<div>Login Page</div>} />
             <Route path="signup" element={<div>Signup Page</div>} />
             <Route path="*" element={<NoPage />} />
+            <Route path="/location/:slug" element={<LocationPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
