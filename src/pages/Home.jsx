@@ -2,6 +2,8 @@ import React from 'react'
 import HeroImg from '../assets/hero-image.png'
 import Hero from '../components/Hero/Hero'
 import PopularLocations from '../components/Locations/PopularLocations'
+import TestimonialMap from '../components/Testimonial/TestimonialMap'
+
 
 const Home = () => {
   return (
@@ -25,6 +27,9 @@ const Home = () => {
         
         {/* Popular Locations Section */}
         <PopularLocations />
+
+        {/* Testimonial Map Section */}
+        <TestimonialMap />
 
 
       </div>
