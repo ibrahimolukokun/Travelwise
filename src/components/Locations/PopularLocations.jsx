@@ -77,7 +77,7 @@ const PopularLocations = () => {
     <section className=" py-12 px-6 md:px-12">
       <div className="flex justify-between items-center mb-6">
         <div>
-          <h2 className="text-3xl font-bold text-gray-900">Popular Locations</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Popular Locations</h2>
           <p className="text-gray-500 text-sm">Checkout most trending places to visit</p>
         </div>
         <div className="space-x-2 hidden md:flex">
@@ -94,7 +94,7 @@ const PopularLocations = () => {
         {destinations.map((item, index) => (
           <Link
             key={index}
-            to={`/location/${item.slug}`}
+            to={``}
             className="min-w-[240px] sm:min-w-[280px] max-w-[280px] flex-shrink-0"
           >
             <img

@@ -26,41 +26,59 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className='hidden md:block'>
-          <ul className='flex items-center gap-6'>
-            <li className='py-4'>
-              <NavLink to="/discover" activeClassName="active" onClick={() => window.scrollTo(0,0)}>
-                Discover
-              </NavLink>
-            </li>
-            <li className='py-4'>
-              <NavLink to="/deals" activeClassName="active" onClick={() => window.scrollTo(0,0)}>
-                Special Deals
-              </NavLink>
-            </li>
-            <li className='py-4'>
-              <NavLink to="/community" activeClassName="active" onClick={() => window.scrollTo(0,0)}>
-                Community
-              </NavLink>
-            </li>
-            <li className='py-4'>
-              <NavLink to="/about" activeClassName="active" onClick={() => window.scrollTo(0,0)}>
-                About Us
-              </NavLink>
-            </li>
+          <div className='hidden md:block'>
+            <ul className='flex items-center gap-6'>
+              <li className='py-4'>
+                <NavLink 
+            to="" 
+            activeClassName="active"  
+            onClick={() => window.scrollTo(0,0)}
+            className="transition-colors hover:text-primary"
+                >
+            Discover
+                </NavLink>
+              </li>
+              <li className='py-4'>
+                <NavLink 
+            to="" 
+            activeClassName="active" 
+            onClick={() => window.scrollTo(0,0)}
+            className="transition-colors hover:text-primary"
+                >
+            Special Deals
+                </NavLink>
+              </li>
+              <li className='py-4'>
+                <NavLink 
+            to="" 
+            activeClassName="active" 
+            onClick={() => window.scrollTo(0,0)}
+            className="transition-colors hover:text-primary"
+                >
+            Community
+                </NavLink>
+              </li>
+              <li className='py-4'>
+                <NavLink 
+            to="" 
+            activeClassName="active" 
+            onClick={() => window.scrollTo(0,0)}
+            className="transition-colors hover:text-primary"
+                >
+            About Us
+                </NavLink>
+              </li>
+            </ul>
+          </div>
 
-          </ul>
-
-        </div>
-
-        {/* Login/Signup Buttons */}
+          {/* Login/Signup Buttons */}
         <div className=' items-center gap-4 sm:block md:block hidden'>
-          <Link to="/login">
+          <Link to="">
             <Button variant="ghost" size="md">
               Login
             </Button>
           </Link>
-          <Link to="/signup">
+          <Link to="">
             <Button variant="primary" size="md">
               Sign Up
             </Button>

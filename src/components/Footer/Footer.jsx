@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-white text-dark px-6 md:px-12 pt-16 pb-10">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 gap-10">
         {/* Logo and description */}
         <div className="md:col-span-2">
         <Link to="/" onClick={()=> window.scrollTo(0,0)}>
@@ -20,24 +20,24 @@ const Footer = () => {
         </div>
 
         {/* Footer Columns */}
-        {[
-          { title: "About", links: ["How it works", "Careers", "Blog"] },
-          { title: "Company", links: ["Partnerships", "Press", "Privacy Policy"] },
-          { title: "Support", links: ["Help Center", "Cancellation", "Community"] },
-          { title: "Contact", links: ["info@travelwise.com", "+44 0000 123456"] },
-        ].map((col, index) => (
-          <div key={index}>
-            <h4 className="font-semibold text-dark mb-4">{col.title}</h4>
-            <ul className="space-y-2 text-sm text-gray-600">
-              {col.links.map((link, i) => (
-                <li key={i} className="hover:text-primary cursor-pointer">{link}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-
-      {/* Newsletter */}
+        <div className="max-w-6xl grid grid-cols-2 sm:grid-cols-4 gap-6 py-6">
+          {[
+            { title: "About", links: ["How it works", "Careers", "Blog"] },
+            { title: "Company", links: ["Partnerships", "Press", "Privacy Policy"] },
+            { title: "Support", links: ["Help Center", "Cancellation", "Community"] },
+            { title: "Contact", links: ["info@travelwise.com", "+44 0000 123456"] },
+          ].map((col, index) => (
+            <div key={index} className="">
+              <h4 className="font-semibold text-dark mb-4">{col.title}</h4>
+              <ul className="space-y-2 text-sm text-gray-600">
+                {col.links.map((link, i) => (
+            <li key={i} className="hover:text-primary cursor-pointer">{link}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+              </div>
       <div className="max-w-6xl mx-auto mt-10 border-t border-gray-300 pt-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-gray-600 text-sm">
           © {new Date().getFullYear()} Travelwise. All rights reserved.

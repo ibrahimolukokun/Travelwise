@@ -11,21 +11,21 @@ const Home = () => {
     <>
       <div>
         {/* Hero Section */}
-        <div className='relative w-full h-[60vh]  flex items-center justify-center'>
-          <div className='absolute inset-0 '>
-              <div className=''>
-              {/* Background Image */}
-              <img
-                src={HeroImg}
-                alt="Travel Background"
-                className="absolute right-0 w-full h-[60vh] object-cover z-[-1]"
-              />
-            </div>
+        <div className='relative w-full min-h-screen sm:min-h-[70vh] lg:min-h-[70vh] flex items-center justify-center overflow-hidden'>
+          <div className='absolute inset-0 sm:px-2'>
+            {/* Background Image */}
+            <img
+              src={HeroImg}
+              alt="Travel Background"
+              className="absolute inset-0 w-full h-full object-cover z-[-1]"
+            />
             {/* Hero Content */}
-            <Hero />
+            <div className="relative z-10 w-full px-4 sm:px-6 lg:px-12">
+              <Hero />
+            </div>
           </div>
         </div>
-        
+
         {/* Popular Locations Section */}
         <PopularLocations />
 

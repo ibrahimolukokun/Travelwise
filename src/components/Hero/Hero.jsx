@@ -71,7 +71,7 @@ const Hero = () => {
                         type="submit"
                         variant='primary'
                         size='lg'
-                        to="/discover"
+                        to=""
                     >
                     <FaSearch className='mr-4' size={16} />
                         Search
