@@ -1,12 +1,31 @@
-# React + Vite
+Travelwise is a front-end concept for a travel and tour booking platform. It showcases curated destinations with clear layout structure, CTA prompts, and elegant typography — designed with real-world product use in mind.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Live Demo
 
-## Expanding the ESLint configuration
+[View Project](https://travelwisepro.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+🚀 Features
+
+- Travel destination highlights and packages  
+- Hero section with strong visual emphasis  
+- Booking-focused CTA components
+- Fully responsive layout for mobile and desktop
+
+
+
+🛠 Tech Stack
+
+React.js, TailwindCSS, HTML5, CSS3, JavaScript (ES6)
+
+
+📦 Installation
+
+# Clone the repository
+git clone (https://github.com/ibrahimolukokun/Travelwise)
+
+📄 License
+
+This project is open-source and available under the MIT License
